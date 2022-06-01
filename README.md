@@ -1,6 +1,6 @@
 # links::link:
 
- [Heroku Link](https://world-guide.herokuapp.com/)
+ [Demo](https://world-guide.herokuapp.com/)
 
 
 # WorldGuide: :world_map: 
