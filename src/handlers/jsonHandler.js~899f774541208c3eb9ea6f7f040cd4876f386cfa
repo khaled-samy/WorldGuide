@@ -1,0 +1,16 @@
+const path = require('path');
+const fs = require('fs');
+
+const jsonHandler = (response, file) => {
+  const filePath = path.join(__dirname, '..', '..', file);
+  fs.readFile(filePath, (error, data) => {
+    if (error) {
+      response.writeHead(500);
+      response.end('error');
+    } else {
+      response.writeHead(200, { 'Content-type': 'application/json' });
+      response.end(data);
+    }
+  });
+};
+module.exports = jsonHandler;

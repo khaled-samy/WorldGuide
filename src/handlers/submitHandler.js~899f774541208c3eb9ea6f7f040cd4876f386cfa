@@ -1,0 +1,14 @@
+const fetchHandler = require('./fetchHandler');
+
+const url = 'https://restcountries.com/v3.1/name/';
+const submitHandler = (request, response) => {
+  let allData = '';
+  request.on('data', (chunkdata) => {
+    allData += chunkdata;
+  });
+  request.on('end', () => {
+    fetchHandler(url + allData, response);
+  });
+};
+
+module.exports = submitHandler;

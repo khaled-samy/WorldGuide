@@ -1,0 +1,31 @@
+{
+  "name": "fady_khaled_worldguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/fady_khaled_WorldGuide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/fady_khaled_WorldGuide/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/fady_khaled_WorldGuide#readme",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "env2": "^2.2.2",
+    "node-fetch": "^3.2.0"
+  }
+}

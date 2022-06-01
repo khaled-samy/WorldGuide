@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>WorldGuide</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">WorldGuide</h1>
+      <p class="header-details">Learn about the countries of the world.</p>
+      
+    </header>
+    <div class="form-container">
+    <div class="form">
+      
+        <input
+          name="countries"
+          type="text"
+          placeholder="search for a country..."
+          class='input'
+          list='countries'
+          autocomplete="off"
+        />
+        <datalist id="countries" class='data-list'>
+          
+        </datalist>
+        <button class='submit-button'><i class="fas fa-search "></i></button>
+        
+      </div>
+    </div>
+</div>
+
+<div class="img-container"></div>
+<section class='info-container'>
+</section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
